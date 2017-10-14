@@ -11,7 +11,7 @@ const del 				= require("del")
 gulp.task("cache:css", () =>
 	del("./dist/css/style.css"))
 
-gulp.task("cache:js", () => 
+gulp.task("cache:js", () =>
 	del("./dist/js/app.js"))
 
 /* Task compile scss to css */
@@ -25,7 +25,7 @@ gulp.task("sass", ['cache:css'], () => {
 
 /* Task minify html */
 gulp.task("html", () => {
-	return gulp.src("./src/index.html")
+	return gulp.src([ "./src/*.html" ])
 				.pipe(htmlmin({collapseWhitespace: true}))
 				.pipe(gulp.dest("./dist"))
 				.pipe(browserSync.stream())
@@ -62,7 +62,7 @@ gulp.task("server", () => {
 	gulp.watch("./src/scss/**/*.scss", ['sass'])
 	gulp.watch("./src/components/bootstrap/scss/**/*.scss", ['sass'])
 	gulp.watch("./src/js/**/*.js", ['js'])
-	gulp.watch("./src/index.html", ['html'])
+	gulp.watch("./src/*.html", ['html'])
 })
 
 gulp.task("default", ["sass", "html", "js", "concat-js", "server"])
