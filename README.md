@@ -4,15 +4,32 @@
 
 An free admin panel that its been developed and everyone can contrib.
 
+![home dashboard](prints/home.png)
+
 ## In this version we have:
 - HTML + CSS (SCSS) + JS;
 - Bootstrap 4;
+- Gulp;
+- Bower;
+- Browser Sync;
 - Responsive design;
 - Nice layout;
 
-We hope to release more versions of this theme in the future, in Angular, React, Vue, etc ...
+## How can you download and use it?
 
-![home dashboard](prints/home.png)
+Its very simple to download and use the admin-theme, just follow these steps
+
+```
+  $ git clone https://github.com/thiagopaiva99/admin-theme.git admin-theme
+  $ cd admin-theme
+  $ npm install
+  $ bower install ( if you dont have bower as a global package, first run npm install -g bower )
+  $ gulp ( if you dont have gulp as a golbal package, first run npm install -g gulp )
+
+  Now is just code!!!
+```
+
+We hope to release more versions of this theme in the future, in Angular, React, Vue, etc ...
 
 ### How can you help us?
 - Star our GitHub repo
