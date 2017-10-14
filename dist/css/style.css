@@ -8325,6 +8325,7 @@ body {
 .sidebar {
   width: 70%;
   height: 100%;
+  max-width: 180px;
   position: fixed;
   left: -80%;
   top: 0;
@@ -8386,3 +8387,46 @@ body {
       margin-right: .5em;
       font-size: .8rem;
       margin-bottom: 0; }
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.card {
+  margin: 1rem; }
+  .card .nav {
+    flex-direction: column; }
+  .card .card-header,
+  .card .card-footer {
+    background-color: transparent; }
+  .card.contractors .card-block {
+    display: flex;
+    justify-content: center; }
+    .card.contractors .card-block .fa {
+      font-size: 5rem; }
+      .card.contractors .card-block .fa.warning {
+        color: #fc8f3e; }
+  .card.contractors .card-footer {
+    display: flex;
+    justify-content: space-between; }
+    .card.contractors .card-footer .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 1.3rem; }
+      .card.contractors .card-footer .item .warning {
+        color: #fc8f3e; }
+      .card.contractors .card-footer .item .info {
+        color: #57b0eb; }
+
+.badge {
+  width: 14px;
+  height: 14px;
+  display: inline-block !important; }
+  .badge.primary {
+    background: #293541; }
+  .badge.info {
+    background: #57b0eb; }
+  .badge.warning {
+    background: #fc8f3e; }

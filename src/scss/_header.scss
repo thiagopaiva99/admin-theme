@@ -1,0 +1,35 @@
+// header
+.header {
+	width: 100%;
+	height: 70px;
+	padding: 0 1em;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	box-shadow: 0 5px 15px -2px rgba(0, 0, 0, .3);
+
+	.mark {
+		color: $orange;
+	}
+
+	.offcanvas,
+	.datetimer,
+	.user {
+		display: flex;
+		align-items: center;
+	}
+
+	.offcanvas .item {
+		font-size: 2rem;
+	}
+
+	.datetimer {
+		flex-direction: row;
+
+		> p {
+			margin-right: .5em;
+			font-size: .8rem;
+			margin-bottom: 0;
+		}
+	}
+}
