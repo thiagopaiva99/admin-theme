@@ -23,18 +23,35 @@
 		flex-direction: column;
 
 		.nav-item {
-			padding: .1em;
+			padding: .3em .1rem;
 		}
 
 		.nav-link {
-			color: white;
+			font-size: .9rem;
+			color: #ccc;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 
+			&:hover {
+				color: white;
+
+				.fa {
+					color: $orange;
+				}
+			}
+
 			.fa {
 				font-size: 1.5em;
 			}
+		}
+	}
+
+	@include media-breakpoint-up('lg') {
+		left: 0;
+
+		.nav .nav-link {
+			font-size: 1rem;
 		}
 	}
 }

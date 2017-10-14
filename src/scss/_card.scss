@@ -1,0 +1,113 @@
+.headline {
+  padding-left: 15px;
+}
+
+.center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.card {
+	margin: 1rem;
+	height: 437px;
+
+	.nav {
+		flex-direction: column;
+
+		@include media-breakpoint-up('lg') {
+			flex-direction: row;
+
+			.nav-item {
+				margin-right: 1em;
+			}
+		}
+	}
+
+	.card-header,
+	.card-footer {
+		background-color: transparent;
+	}
+
+	&.contractors {
+		.card-block {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			.fa {
+				font-size: 5rem;
+
+				&.warning {
+					color: $orange;
+				}
+			}
+		}
+
+		.card-footer {
+			display: flex;
+			justify-content: space-between;
+
+			.item {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				font-size: 1.3rem;
+
+				.warning {
+					color: $orange;
+				}
+
+				.info {
+					color: $clear-blue;
+				}
+			}
+		}
+	}
+}
+
+.badge {
+	width: 14px;
+	height: 14px;
+	display: inline-block !important;
+
+	&.primary {
+		background: $dark-blue;
+	}
+
+	&.info {
+		background: $clear-blue;
+	}
+
+	&.warning {
+		background: $orange;
+	}
+}
+
+.higher-column ,
+.smaller-column {
+	width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.container {
+  width: 100%;
+}
+
+@include media-breakpoint-up('sm') {
+  .higher-column {
+  	@include make-col(8);
+  }
+
+  .smaller-column {
+  	@include make-col(4);
+  }
+}
+
+@include media-breakpoint-up('lg') {
+	.container {
+		width: 86%;
+		margin-left: 180px;
+	}
+}
