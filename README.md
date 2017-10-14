@@ -4,6 +4,14 @@
 
 An free admin panel that its been developed and everyone can contrib.
 
+## In this version we have:
+- HTML + CSS (SCSS) + JS;
+- Bootstrap 4;
+- Responsive design;
+- Nice layout;
+
+We hope to release more versions of this theme in the future, in Angular, React, Vue, etc ...
+
 ![home dashboard](prints/home.png)
 
 ### How can you help us?
